@@ -50,7 +50,7 @@ namespace VMU_LibPerspective_Sprite_Generator
 
                 Console.WriteLine("Conversion complete!");
 
-                string finalOutput = args[0].TrimEnd(".png".ToCharArray()) + ":\n.byte " + bitmap.Width + ", " + bitmap.Height + "\n";
+                string finalOutput = args[0].TrimEnd(".png".ToCharArray()) + ":\n.byte " + bitmap.Width + ", " + bitmap.Height + "\n"; // Output File Will Have The Same Name As The Input, With The .ASM Extension.
                 for (int y = 0; y < bitmap.Height; y++)
                 {
                     finalOutput+= "  .byte %";
